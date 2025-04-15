@@ -1,0 +1,21 @@
+Use Case: Helpdesk Automation for Stuck Transactions in Integration Platform
+>>Background
+This project involves integrating over 4000 applications using platforms like MuleSoft and another integration tool.
+These platforms act as middleware, enabling communication between different end-user applications.
+
+>>Current Problem
+Sometimes, transactions get stuck or fail during integration.
+When this happens, users raise issues with the support analysts.
+  
+The analysts manually:
+1. Check Splunk logs
+2. Review application logs
+3. Refer to documentation/mappings
+4. Then explain the cause of the failure
+
+  >>Goal
+The team wants to automate this support process using a helpdesk assistant (like a chatbot or tool).
+This system should help analysts (or even users) quickly understand the reason for stuck transactions by:
+Reading and understanding logs (Splunk + app logs)
+Mapping errors or codes using documentation
+Providing a clear explanation or root cause
