@@ -1,0 +1,18 @@
+Incident Types Raised by SCOM Tool:
+
+Failed to Connect to Servers:
+The L1 team checks server connectivity using ping and RDP.
+If both ping and RDP are successful, the ticket is closed.
+If either fails, the issue is escalated to the L2 team.
+SCOM Health Service Heartbeat Failure:
+The L1 team verifies if the server is up.
+If it is, they attempt to restart the Microsoft Monitoring Agent service.
+If the service cannot be restarted or the issue persists, the ticket is assigned to Bryan.
+Automation with IMSS Tool:
+
+**The manual steps previously handled by the L1 team are  automated using the IMSS tool.
+
+Automated Steps via Leap:
+
+Checks server status using ping and RDP (no need to raise an incident).
+Monitors the health service across all servers and restarts the service automatically if it's not running.
